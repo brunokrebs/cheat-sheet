@@ -14,7 +14,9 @@ docker rm postgres
 ## MongoDB Commands
 
 ```bash
-docker run --name mongo -d mongo
+docker run --name mongo \
+    -p 27017:27017 \
+    -d mongo
 
 docker stop mongo
 docker rm mongo
