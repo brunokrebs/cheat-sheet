@@ -15,6 +15,9 @@ docker rm postgres
 
 ```bash
 docker run --name mongo -d mongo
+
+docker stop postgres
+docker rm postgres
 ```
 
 ## MySQL Commands
