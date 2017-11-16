@@ -1,3 +1,40 @@
+## Docker Basic Commands
+
+Commands to run PostgreSQL, MySQL, MongoDB, and Redis can be found in the following sections.
+
+Let's see how to build an image:
+
+```bash
+# Build an image from a Dockerfile
+docker build -t somename:sometag ./
+```
+
+Now, let's see different ways to run an image:
+
+```bash
+# simply run the image (not dettached)
+docker run blog:design
+
+# run an instance detached
+docker run blog:design -d
+
+# run an instance detached
+docker run --name blog-new-layout blog:design
+
+# run the image associating a local port
+# to a port in the instance created
+docker run -p 4000:80 blog:design
+
+# all together
+docker run -p 4000:80 \
+  --name blog-new-layout \
+  -d blog:design
+
+# shows all running instances
+docker ps --all
+```
+
+
 ## PostgreSQL Commands
 
 ```bash
