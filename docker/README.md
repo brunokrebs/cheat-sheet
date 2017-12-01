@@ -84,3 +84,16 @@ docker run --name mysql \
 docker stop mysql
 docker rm mysql
 ```
+
+## Tags
+
+```bash
+# first we build something
+docker build -t load-balance-nginx .
+
+# then we create the tag
+docker tag load-balance-nginx brunokrebs/load-balance-nginx
+
+# then we push the tag
+docker push brunokrebs/load-balance-nginx
+```
