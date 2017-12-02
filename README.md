@@ -7,3 +7,5 @@ I decided to start this repository so I can easily find (and register) useful co
 - [docker - commands to spin Docker instances and other Docker related commands](./docker/)
 - [spring - commands related to Spring](./spring/)
 - [editorconfig - config examples](./editorconfig/)
+- [bash - for now, just  backup](./bash/)
+- [bash - for now, just `bash_profile` backup](./bash/)
