@@ -18,9 +18,6 @@ source ~/bin/completion-git.bash
 export PATH="/usr/local/bin/google-cloud-sdk/bin":$PATH
 source /usr/local/bin/google-cloud-sdk/completion.bash.inc
 
-# github token
-GUEST_WRITER_GITHUB_TOKEN=a1cbd3ab6a70d9dfb7852b723ac72bc4b960fc72
-
 function create_new_post {
   # are we are on blog's root dir?
   ls | grep Rakefile &> /dev/null \
