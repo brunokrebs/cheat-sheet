@@ -7,6 +7,20 @@ alias ll="ls -la"
 alias blog="(cd ~/git/blog && bundle exec jekyll serve --watch --limit_posts 1 &)"
 alias new_post="create_new_post"
 
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+eval "$(rbenv init -)"
+
+# git completion
+source ~/bin/completion-git.bash
+
+# google cloud
+export PATH="/usr/local/bin/google-cloud-sdk/bin":$PATH
+source /usr/local/bin/google-cloud-sdk/completion.bash.inc
+
+# github token
+GUEST_WRITER_GITHUB_TOKEN=a1cbd3ab6a70d9dfb7852b723ac72bc4b960fc72
+
 function create_new_post {
   # are we are on blog's root dir?
   ls | grep Rakefile &> /dev/null \
@@ -59,7 +73,3 @@ function create_new_post {
   # with a brand new post
   rake new_post["$2"]
 }
-
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-eval "$(rbenv init -)"
