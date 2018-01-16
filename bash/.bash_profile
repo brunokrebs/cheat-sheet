@@ -6,6 +6,7 @@ alias refresh_bash="source ~/.bash_profile"
 alias ll="ls -la"
 alias blog="(cd ~/git/blog && bundle exec jekyll serve --watch --limit_posts 1 &)"
 alias new_post="create_new_post"
+alias android-device="~/Library/Android/sdk/tools/emulator -avd 4.65_720p_Galaxy_Nexus_API_24"
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
